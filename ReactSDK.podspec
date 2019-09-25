@@ -147,7 +147,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'DoubleConversion'
   spec.dependency 'Folly'
   spec.dependency 'glog'
-  #spec.dependency 'React'
+  spec.dependency 'React'
 
   podspecs = [
     #'node_modules/react-native/React.podspec',
