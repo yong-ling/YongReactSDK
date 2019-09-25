@@ -71,6 +71,8 @@
 		6B55FFEC233B20FA00847C44 /* libReact-RCTVibration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTVibration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B55FFEE233B20FA00847C44 /* libReact-RCTWebSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTWebSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B55FFF0233B20FA00847C44 /* libyoga.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libyoga.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B55FFF2233B298000847C44 /* Pods-ReactSDK.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-ReactSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		6B55FFF3233B298400847C44 /* Pods-ReactSDK.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-ReactSDK.release.xcconfig"; sourceTree = "<group>"; };
 		8ACA252B4446831488C81149 /* Pods-YongReactSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YongReactSDKTests.release.xcconfig"; path = "Target Support Files/Pods-YongReactSDKTests/Pods-YongReactSDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		99452E4F278A6AA627A1CAEF /* libPods-YongReactSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YongReactSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D73946664AF70459E9EE64E /* Pods-YongReactSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YongReactSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-YongReactSDKTests/Pods-YongReactSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +183,8 @@
 		507A3A3E8529235E1C6B405D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				6B55FFF2233B298000847C44 /* Pods-ReactSDK.debug.xcconfig */,
+				6B55FFF3233B298400847C44 /* Pods-ReactSDK.release.xcconfig */,
 				DADE53A6DCF3649FF14826A9 /* Pods-YongReactSDK.debug.xcconfig */,
 				00D251886BD67756BD08CC29 /* Pods-YongReactSDK.release.xcconfig */,
 				F9766DB644501BD788FAF713 /* Pods-YongReactSDK-tvOS.debug.xcconfig */,
@@ -588,6 +592,7 @@
 		};
 		6B55FFBB233B1F4200847C44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B55FFF2233B298000847C44 /* Pods-ReactSDK.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -621,6 +626,7 @@
 		};
 		6B55FFBC233B1F4200847C44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B55FFF3233B298400847C44 /* Pods-ReactSDK.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
