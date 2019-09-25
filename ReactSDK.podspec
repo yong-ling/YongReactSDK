@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ReactSDK"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "ReactSDK is a quick helper for testing cocoapods"
 
   # This description is used to generate tags and improve search results.
@@ -123,6 +123,8 @@ Pod::Spec.new do |spec|
   # spec.libraries = "iconv", "xml2"
   # spec.libraries = "DoubleConversion", "Folly", "glog", "React-Core", "React-cxxreact", "React-DevSupport", "React-jsi", "React-jsiexecutor", "React-jsinspector", "React-RCTActionSheet", "React-RCTAnimation", "React-RCTBlob", "React-RCTImage", "React-RCTLinking", "React-RCTNetwork", "React-RCTSettings", "React-RCTText", "React-RCTVibration", "React-RCTWebSocket", "yoga"
   spec.vendored_libraries = "lib/DoubleConversion/libDoubleConversion.a", "lib/Folly/libFolly.a", "lib/glog/libglog.a", "lib/React-Core/libReact-Core.a", "lib/React-cxxreact/libReact-cxxreact.a", "lib/React-DevSupport/libReact-DevSupport.a", "lib/React-jsi/libReact-jsi.a", "lib/React-jsiexecutor/libReact-jsiexecutor.a", "lib/React-jsinspector/libReact-jsinspector.a", "lib/React-RCTActionSheet/libReact-RCTActionSheet.a", "lib/React-RCTAnimation/libReact-RCTAnimation.a", "lib/React-RCTBlob/libReact-RCTBlob.a", "lib/React-RCTImage/libReact-RCTImage.a", "lib/React-RCTLinking/libReact-RCTLinking.a", "lib/libReact-RCTNetwork/libReact-RCTNetwork.a", "lib/React-RCTSettings/libReact-RCTSettings.a", "lib/React-RCTText/libReact-RCTText.a", "lib/React-RCTVibration/libReact-RCTVibration.a", "lib/React-RCTWebSocket/libReact-RCTWebSocket.a"
+  spec.public_header_files = "ios/Pods/Headers/Public/React-Core/**/*.{h}"
+  spec.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => '"ios/Pods/Headers/Public/React-Core/.."/**' }
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
