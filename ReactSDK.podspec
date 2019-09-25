@@ -117,7 +117,7 @@ Pod::Spec.new do |spec|
 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
-  spec.ios.frameworks  = "UIKit", "React"
+  spec.ios.frameworks  = "UIKit"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
@@ -131,30 +131,28 @@ Pod::Spec.new do |spec|
 
   # spec.requires_arc = true
 
+  # Use the same RN version that the JS tools use
+  react_native_version = '0.60.5'
+
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-  spec.dependency "React"
-  spec.dependency "React-Core"
-  spec.dependency "React-DevSupport"
-  spec.dependency "React-RCTActionSheet"
-  spec.dependency "React-RCTAnimation"
-  spec.dependency "React-RCTBlob"
-  spec.dependency "React-RCTImage"
-  spec.dependency "React-RCTLinking"
-  spec.dependency "React-RCTPushNotification"
-  spec.dependency "React-RCTNetwork"
-  spec.dependency "React-RCTSettings"
-  spec.dependency "React-RCTText"
-  spec.dependency "React-RCTVibration"
-  spec.dependency "React-RCTWebSocket"
-  spec.dependency "React-cxxreact"
-  spec.dependency "React-jsi"
-  spec.dependency "React-jsiexecutor"
-  spec.dependency "React-jsinspector"
-  spec.dependency "yoga"
+  spec.dependency 'React/Core', react_native_version
+  spec.dependency 'React/CxxBridge', react_native_version
+  spec.dependency 'React/RCTAnimation', react_native_version
+  spec.dependency 'React/RCTImage', react_native_version
+  spec.dependency 'React/RCTLinkingIOS', react_native_version
+  spec.dependency 'React/RCTNetwork', react_native_version
+  spec.dependency 'React/RCTText', react_native_version
 
-  spec.dependency "DoubleConversion"
-  spec.dependency "glog"
-  spec.dependency "Folly"
-
+  # React's dependencies
+  spec.dependency 'yoga', "#{react_native_version}.React"
+  podspecs = [
+    'node_modules/react-native/third-party-podspecs/DoubleConversion.podspec',
+    'node_modules/react-native/third-party-podspecs/Folly.podspec',
+    'node_modules/react-native/third-party-podspecs/glog.podspec'
+  ]
+  podspecs.each do |podspec_path|
+    spec = Pod::Specification.from_file podspec_path
+    s.dependency spec.name, "#{spec.version}"
+  end
 end
