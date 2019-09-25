@@ -89,7 +89,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "ReactSDK/*.{h,m}"
+  spec.source_files  = "ios/ReactSDK/*.{h,m}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -122,7 +122,6 @@ Pod::Spec.new do |spec|
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 
-
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If your library depends on compiler flags you can set them in the xcconfig hash
@@ -136,23 +135,28 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-  spec.dependency 'React/Core', react_native_version
-  spec.dependency 'React/CxxBridge', react_native_version
-  spec.dependency 'React/RCTAnimation', react_native_version
-  spec.dependency 'React/RCTImage', react_native_version
-  spec.dependency 'React/RCTLinkingIOS', react_native_version
-  spec.dependency 'React/RCTNetwork', react_native_version
-  spec.dependency 'React/RCTText', react_native_version
+  #spec.dependency 'React/Core', react_native_version
+  #spec.dependency 'React/CxxBridge', react_native_version
+  #spec.dependency 'React/RCTAnimation', react_native_version
+  #spec.dependency 'React/RCTImage', react_native_version
+  #spec.dependency 'React/RCTLinkingIOS', react_native_version
+  #spec.dependency 'React/RCTNetwork', react_native_version
+  #spec.dependency 'React/RCTText', react_native_version
 
   # React's dependencies
-  spec.dependency 'yoga', "#{react_native_version}.React"
+  spec.dependency 'DoubleConversion'
+  spec.dependency 'Folly'
+  spec.dependency 'glog'
+  #spec.dependency 'React'
+
   podspecs = [
+    #'node_modules/react-native/React.podspec',
     'node_modules/react-native/third-party-podspecs/DoubleConversion.podspec',
     'node_modules/react-native/third-party-podspecs/Folly.podspec',
     'node_modules/react-native/third-party-podspecs/glog.podspec'
   ]
-  podspecs.each do |podspec_path|
-    spec = Pod::Specification.from_file podspec_path
-    s.dependency spec.name, "#{spec.version}"
-  end
+  #podspecs.each do |podspec_path|
+  #  podspec = Pod::Specification.from_file podspec_path
+  #  spec.dependency podspec.name, "#{podspec.version}"
+  #end
 end
