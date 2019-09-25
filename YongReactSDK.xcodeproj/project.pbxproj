@@ -12,8 +12,28 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		6B550001233B3BFC00847C44 /* libReact-DevSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B550000233B3BFC00847C44 /* libReact-DevSupport.a */; };
+		6B550003233B3BFC00847C44 /* libReact-jsi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B550002233B3BFC00847C44 /* libReact-jsi.a */; };
+		6B550005233B3BFC00847C44 /* libReact-jsiexecutor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B550004233B3BFC00847C44 /* libReact-jsiexecutor.a */; };
+		6B550007233B3BFC00847C44 /* libReact-jsinspector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B550006233B3BFC00847C44 /* libReact-jsinspector.a */; };
+		6B550009233B3BFC00847C44 /* libReact-RCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B550008233B3BFC00847C44 /* libReact-RCTActionSheet.a */; };
+		6B55000B233B3BFC00847C44 /* libReact-RCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B55000A233B3BFC00847C44 /* libReact-RCTAnimation.a */; };
+		6B55000D233B3BFC00847C44 /* libReact-RCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B55000C233B3BFC00847C44 /* libReact-RCTBlob.a */; };
+		6B55000F233B3BFC00847C44 /* libReact-RCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B55000E233B3BFC00847C44 /* libReact-RCTImage.a */; };
+		6B550011233B3BFC00847C44 /* libReact-RCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B550010233B3BFC00847C44 /* libReact-RCTLinking.a */; };
+		6B550013233B3BFC00847C44 /* libReact-RCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B550012233B3BFC00847C44 /* libReact-RCTNetwork.a */; };
+		6B550015233B3BFC00847C44 /* libReact-RCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B550014233B3BFC00847C44 /* libReact-RCTSettings.a */; };
+		6B550017233B3BFC00847C44 /* libReact-RCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B550016233B3BFC00847C44 /* libReact-RCTText.a */; };
+		6B550019233B3BFC00847C44 /* libReact-RCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B550018233B3BFC00847C44 /* libReact-RCTVibration.a */; };
+		6B55001B233B3BFC00847C44 /* libReact-RCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B55001A233B3BFC00847C44 /* libReact-RCTWebSocket.a */; };
+		6B55001D233B3BFC00847C44 /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B55001C233B3BFC00847C44 /* libyoga.a */; };
 		6B55FFB6233B1F4200847C44 /* ReactSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B55FFB4233B1F4200847C44 /* ReactSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B55FFC0233B1FC400847C44 /* ReactAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B55FFBF233B1FC400847C44 /* ReactAppDelegate.m */; };
+		6B55FFF7233B3BFC00847C44 /* libDoubleConversion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B55FFF6233B3BFC00847C44 /* libDoubleConversion.a */; };
+		6B55FFF9233B3BFC00847C44 /* libFolly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B55FFF8233B3BFC00847C44 /* libFolly.a */; };
+		6B55FFFB233B3BFC00847C44 /* libglog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B55FFFA233B3BFC00847C44 /* libglog.a */; };
+		6B55FFFD233B3BFC00847C44 /* libReact-Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B55FFFC233B3BFC00847C44 /* libReact-Core.a */; };
+		6B55FFFF233B3BFC00847C44 /* libReact-cxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B55FFFE233B3BFC00847C44 /* libReact-cxxreact.a */; };
 		6EFB70BD36AB789A1EFC3102 /* libPods-YongReactSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99452E4F278A6AA627A1CAEF /* libPods-YongReactSDKTests.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +62,21 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = YongReactSDK/main.m; sourceTree = "<group>"; };
 		15C35DB35487F0A9954D5615 /* libPods-YongReactSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YongReactSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B142415A07B693E278F023 /* libPods-YongReactSDK-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YongReactSDK-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B550000233B3BFC00847C44 /* libReact-DevSupport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-DevSupport.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B550002233B3BFC00847C44 /* libReact-jsi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-jsi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B550004233B3BFC00847C44 /* libReact-jsiexecutor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-jsiexecutor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B550006233B3BFC00847C44 /* libReact-jsinspector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-jsinspector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B550008233B3BFC00847C44 /* libReact-RCTActionSheet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTActionSheet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B55000A233B3BFC00847C44 /* libReact-RCTAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B55000C233B3BFC00847C44 /* libReact-RCTBlob.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTBlob.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B55000E233B3BFC00847C44 /* libReact-RCTImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B550010233B3BFC00847C44 /* libReact-RCTLinking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTLinking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B550012233B3BFC00847C44 /* libReact-RCTNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B550014233B3BFC00847C44 /* libReact-RCTSettings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTSettings.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B550016233B3BFC00847C44 /* libReact-RCTText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B550018233B3BFC00847C44 /* libReact-RCTVibration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTVibration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B55001A233B3BFC00847C44 /* libReact-RCTWebSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTWebSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B55001C233B3BFC00847C44 /* libyoga.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libyoga.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B55FFB2233B1F4200847C44 /* ReactSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B55FFB4233B1F4200847C44 /* ReactSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactSDK.h; sourceTree = "<group>"; };
 		6B55FFB5233B1F4200847C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +108,11 @@
 		6B55FFF0233B20FA00847C44 /* libyoga.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libyoga.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B55FFF2233B298000847C44 /* Pods-ReactSDK.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-ReactSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		6B55FFF3233B298400847C44 /* Pods-ReactSDK.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-ReactSDK.release.xcconfig"; sourceTree = "<group>"; };
+		6B55FFF6233B3BFC00847C44 /* libDoubleConversion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDoubleConversion.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B55FFF8233B3BFC00847C44 /* libFolly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFolly.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B55FFFA233B3BFC00847C44 /* libglog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglog.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B55FFFC233B3BFC00847C44 /* libReact-Core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-Core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B55FFFE233B3BFC00847C44 /* libReact-cxxreact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-cxxreact.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ACA252B4446831488C81149 /* Pods-YongReactSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YongReactSDKTests.release.xcconfig"; path = "Target Support Files/Pods-YongReactSDKTests/Pods-YongReactSDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		99452E4F278A6AA627A1CAEF /* libPods-YongReactSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YongReactSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D73946664AF70459E9EE64E /* Pods-YongReactSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YongReactSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-YongReactSDKTests/Pods-YongReactSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +146,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B55FFF7233B3BFC00847C44 /* libDoubleConversion.a in Frameworks */,
+				6B55FFF9233B3BFC00847C44 /* libFolly.a in Frameworks */,
+				6B55FFFB233B3BFC00847C44 /* libglog.a in Frameworks */,
+				6B55FFFD233B3BFC00847C44 /* libReact-Core.a in Frameworks */,
+				6B55FFFF233B3BFC00847C44 /* libReact-cxxreact.a in Frameworks */,
+				6B550001233B3BFC00847C44 /* libReact-DevSupport.a in Frameworks */,
+				6B550003233B3BFC00847C44 /* libReact-jsi.a in Frameworks */,
+				6B550005233B3BFC00847C44 /* libReact-jsiexecutor.a in Frameworks */,
+				6B550007233B3BFC00847C44 /* libReact-jsinspector.a in Frameworks */,
+				6B550009233B3BFC00847C44 /* libReact-RCTActionSheet.a in Frameworks */,
+				6B55000B233B3BFC00847C44 /* libReact-RCTAnimation.a in Frameworks */,
+				6B55000D233B3BFC00847C44 /* libReact-RCTBlob.a in Frameworks */,
+				6B55000F233B3BFC00847C44 /* libReact-RCTImage.a in Frameworks */,
+				6B550011233B3BFC00847C44 /* libReact-RCTLinking.a in Frameworks */,
+				6B550013233B3BFC00847C44 /* libReact-RCTNetwork.a in Frameworks */,
+				6B550015233B3BFC00847C44 /* libReact-RCTSettings.a in Frameworks */,
+				6B550017233B3BFC00847C44 /* libReact-RCTText.a in Frameworks */,
+				6B550019233B3BFC00847C44 /* libReact-RCTVibration.a in Frameworks */,
+				6B55001B233B3BFC00847C44 /* libReact-RCTWebSocket.a in Frameworks */,
+				6B55001D233B3BFC00847C44 /* libyoga.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +206,26 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B55FFF6233B3BFC00847C44 /* libDoubleConversion.a */,
+				6B55FFF8233B3BFC00847C44 /* libFolly.a */,
+				6B55FFFA233B3BFC00847C44 /* libglog.a */,
+				6B55FFFC233B3BFC00847C44 /* libReact-Core.a */,
+				6B55FFFE233B3BFC00847C44 /* libReact-cxxreact.a */,
+				6B550000233B3BFC00847C44 /* libReact-DevSupport.a */,
+				6B550002233B3BFC00847C44 /* libReact-jsi.a */,
+				6B550004233B3BFC00847C44 /* libReact-jsiexecutor.a */,
+				6B550006233B3BFC00847C44 /* libReact-jsinspector.a */,
+				6B550008233B3BFC00847C44 /* libReact-RCTActionSheet.a */,
+				6B55000A233B3BFC00847C44 /* libReact-RCTAnimation.a */,
+				6B55000C233B3BFC00847C44 /* libReact-RCTBlob.a */,
+				6B55000E233B3BFC00847C44 /* libReact-RCTImage.a */,
+				6B550010233B3BFC00847C44 /* libReact-RCTLinking.a */,
+				6B550012233B3BFC00847C44 /* libReact-RCTNetwork.a */,
+				6B550014233B3BFC00847C44 /* libReact-RCTSettings.a */,
+				6B550016233B3BFC00847C44 /* libReact-RCTText.a */,
+				6B550018233B3BFC00847C44 /* libReact-RCTVibration.a */,
+				6B55001A233B3BFC00847C44 /* libReact-RCTWebSocket.a */,
+				6B55001C233B3BFC00847C44 /* libyoga.a */,
 				6B55FFC2233B20FA00847C44 /* libDoubleConversion.a */,
 				6B55FFC4233B20FA00847C44 /* libFolly.a */,
 				6B55FFC6233B20FA00847C44 /* libglog.a */,

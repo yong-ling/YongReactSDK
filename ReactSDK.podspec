@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/yong-ling/YongReactSDK.git", :tag => "#{spec.version}" }
+  spec.source = { :git => "https://github.com/yong-ling/YongReactSDK.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -133,6 +133,28 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-  #spec.dependency "React"
+  spec.dependency "React"
+  spec.dependency "React-Core"
+  spec.dependency "React-DevSupport"
+  spec.dependency "React-RCTActionSheet"
+  spec.dependency "React-RCTAnimation"
+  spec.dependency "React-RCTBlob"
+  spec.dependency "React-RCTImage"
+  spec.dependency "React-RCTLinking"
+  spec.dependency "React-RCTPushNotification"
+  spec.dependency "React-RCTNetwork"
+  spec.dependency "React-RCTSettings"
+  spec.dependency "React-RCTText"
+  spec.dependency "React-RCTVibration"
+  spec.dependency "React-RCTWebSocket"
+  spec.dependency "React-cxxreact"
+  spec.dependency "React-jsi"
+  spec.dependency "React-jsiexecutor"
+  spec.dependency "React-jsinspector"
+  spec.dependency "yoga"
+
+  spec.dependency "DoubleConversion"
+  spec.dependency "glog"
+  spec.dependency "Folly"
 
 end
