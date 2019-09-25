@@ -89,7 +89,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "ios/ReactSDK/*.{h,m}"
+  spec.source_files  = "ios/ReactSDK/*.{h,m}", "node_modules/react-native/React/**/*.{h}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -121,6 +121,8 @@ Pod::Spec.new do |spec|
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
+  # spec.libraries = "DoubleConversion", "Folly", "glog", "React-Core", "React-cxxreact", "React-DevSupport", "React-jsi", "React-jsiexecutor", "React-jsinspector", "React-RCTActionSheet", "React-RCTAnimation", "React-RCTBlob", "React-RCTImage", "React-RCTLinking", "React-RCTNetwork", "React-RCTSettings", "React-RCTText", "React-RCTVibration", "React-RCTWebSocket", "yoga"
+  spec.vendored_libraries = "lib/DoubleConversion/libDoubleConversion.a", "lib/Folly/libFolly.a", "lib/glog/libglog.a", "lib/React-Core/libReact-Core.a", "lib/React-cxxreact/libReact-cxxreact.a", "lib/React-DevSupport/libReact-DevSupport.a", "lib/React-jsi/libReact-jsi.a", "lib/React-jsiexecutor/libReact-jsiexecutor.a", "lib/React-jsinspector/libReact-jsinspector.a", "lib/React-RCTActionSheet/libReact-RCTActionSheet.a", "lib/React-RCTAnimation/libReact-RCTAnimation.a", "lib/React-RCTBlob/libReact-RCTBlob.a", "lib/React-RCTImage/libReact-RCTImage.a", "lib/React-RCTLinking/libReact-RCTLinking.a", "lib/libReact-RCTNetwork/libReact-RCTNetwork.a", "lib/React-RCTSettings/libReact-RCTSettings.a", "lib/React-RCTText/libReact-RCTText.a", "lib/React-RCTVibration/libReact-RCTVibration.a", "lib/React-RCTWebSocket/libReact-RCTWebSocket.a"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -128,7 +130,7 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+  spec.requires_arc = true
 
   # Use the same RN version that the JS tools use
   react_native_version = '0.60.5'
@@ -144,10 +146,16 @@ Pod::Spec.new do |spec|
   #spec.dependency 'React/RCTText', react_native_version
 
   # React's dependencies
-  spec.dependency 'DoubleConversion'
-  spec.dependency 'Folly'
-  spec.dependency 'glog'
-  spec.dependency 'React'
+  #spec.dependency 'DoubleConversion'
+  #spec.dependency 'Folly'
+  #spec.dependency 'glog'
+
+  #s.subspec 'React-cxxreact' do |cs|
+  #  cs.dependency 'React/jsinspector'
+  #end
+
+  #spec.dependency 'React'
+  #spec.dependency 'React/Core'
 
   podspecs = [
     #'node_modules/react-native/React.podspec',
